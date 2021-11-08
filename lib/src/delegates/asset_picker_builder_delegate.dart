@@ -432,7 +432,7 @@ abstract class AssetPickerBuilderDelegate<Asset, Path> {
   /// 当访问受限时在底部展示的提示
   Widget accessLimitedBottomTip(BuildContext context) {
     return GestureDetector(
-      onTap: PhotoManager.openSetting,
+      onTap: PhotoManager.presentLimited,
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 10),
         height: permissionLimitedBarHeight,
